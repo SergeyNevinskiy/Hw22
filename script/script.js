@@ -1,12 +1,12 @@
 function counter(num = 0) {
   const accum = num;
   return {
-    increase: () => accum + 1,
-    decrease: () => accum - 1,
+    incr: () => accum + 1,
+    decr: () => accum - 1,
     value: () => accum,
   };
 }
-const result = counter(16);
-console.log(result.increase());
-console.log(result.decrease());
-console.log(result.value());
+const res = counter(7);
+console.log(res.incr());
+console.log(res.decr());
+console.log(res.value());
