@@ -6,7 +6,7 @@ function counter(num = 0) {
     value: () => accum,
   };
 }
-const res = counter(7);
+const res = counter(5);
 console.log(res.incr());
 console.log(res.decr());
 console.log(res.value());
